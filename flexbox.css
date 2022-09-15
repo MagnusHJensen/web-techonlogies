@@ -1,0 +1,32 @@
+header {
+    background-color: red;
+    padding: 20px 20px;
+}
+
+aside {
+    padding: 20px 10px;
+    background-color: cyan;
+}
+
+section {
+    padding: 20px 10px;
+    background-color: green;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: yellow;
+    padding: 20px 20px;
+}
+
+main {
+    display: flex;
+    flex-grow: 2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
