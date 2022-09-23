@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <article
+      class="container d-flex flex-column align-items-center text-center"
+    >
+      <h1>Example Form</h1>
+      <form id="music-form" action="#" method="post" class="center">
+        <div class="input-group mb-3">
+          <label for="album-name" class="form-label"
+            >Name of the album*:
+          </label>
+          <input
+            type="text"
+            id="album-name"
+            name="album"
+            class="form-control"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="release-year" class="form-label">Release year*: </label>
+          <input
+            type="number"
+            min="1990"
+            max="2022"
+            id="release-year"
+            name="release-year"
+            class="form-control"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="artist">Artist</label>
+          <select name="artist" id="artist">
+            <option value="John">John</option>
+            <option value="Peter">Peter</option>
+            <option value="Bob">Bob</option>
+          </select>
+        </div>
+
+        <p>Select a type*:</p>
+        <div
+          class="input-group mb-3 container-fluid d-flex justify-content-between"
+        >
+          <div>
+            <label for="single" class="form-check-label">Single: </label>
+            <input
+              type="radio"
+              name="type"
+              id="single"
+              class="form-check-input"
+            />
+          </div>
+          <div>
+            <label for="ep">EP:</label>
+            <input type="radio" name="type" id="ep" />
+          </div>
+          <div>
+            <label for="album">Album: </label>
+            <input type="radio" name="type" id="album" />
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="description">Description*:</label>
+          <br />
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div id="track-container">
+          <h3>Tracks</h3>
+          <div id="tracks"></div>
+          <button type="button" id="add-track" onclick="addTrack()">
+            Add track
+          </button>
+        </div>
+
+        <br />
+        <br />
+        <input type="submit" value="Add album" />
+
+        <br />
+        <em>*: fields</em>
+      </form>
+    </article>
+  </body>
+</html>
